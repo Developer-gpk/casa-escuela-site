@@ -1,6 +1,6 @@
 .bottomLink {
   text-align: center;
-  padding: 60px 0;
+  padding: 0 0 60px;
 }
 
 .bottomLink.padding1 {
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .bottomLink {
-    padding: 90px 0;
+    padding: 0 0 90px;
   }
 
   .bottomLink.padding1 {

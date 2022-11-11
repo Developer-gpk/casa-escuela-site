@@ -84,11 +84,13 @@ const Nav = ({ mobileVisible, onToggleClick }) => {
                   path="/contact"
                   text={{ en: "Contact", es: "Contacto" }}
                 />
+                {/*}
                 <NavLink
                   path={shopUrl}
                   text={{ en: "Shop", es: "Tienda" }}
                   target="_blank"
                 />
+                {*/}
                 <LangLink />
               </div>
               <div className="d-flex d-md-none">

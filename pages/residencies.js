@@ -83,7 +83,7 @@ const Residensies = ({ data, globalConfig }) => {
                     <BlockContent blocks={exhibition?.body?.[locale]} />
                     <br />
                     <Link href={exhibition?.linkHref}>
-                      <a className="gplk-btn">{exhibition?.linkText?.[locale]}</a>
+                      <a className="gplk-btn" target='_blank' rel='noreferrer'>{exhibition?.linkText?.[locale]}</a>
                     </Link>
                   </div>
                 </InviewElement>
