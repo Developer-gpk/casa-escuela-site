@@ -20,7 +20,8 @@ export async function getServerSideProps({ locale }) {
       "title": title[$lang],
       content,
       "description": description[$lang],
-      openGraphImage
+      openGraphImage,
+      "archivoURL": archivo.en.asset->url
     }`,
     { lang: locale }
   );
@@ -34,12 +35,13 @@ export async function getServerSideProps({ locale }) {
 
 const Residensies = ({ data, globalConfig }) => {
   const { locale } = useRouter();
-  const { title, description, content, openGraphImage } = data;
+  const { title, description, content, openGraphImage, archivoURL } = data;
 
   const intro = findContentBySlug("residencies", content);
   const exhibition = findContentBySlug("exhibition-space", content);
   const footer = findContentBySlug("footer", content);
   const link = findContentByType("link", content);
+  const url = findContentByType("archivo", content)
 
   return (
     <Layout
@@ -82,7 +84,7 @@ const Residensies = ({ data, globalConfig }) => {
                   <div className="section-body">
                     <BlockContent blocks={exhibition?.body?.[locale]} />
                     <br />
-                    <Link href={exhibition?.linkHref}>
+                    <Link href={archivoURL}>
                       <a className="gplk-btn" target='_blank' rel='noreferrer'>{exhibition?.linkText?.[locale]}</a>
                     </Link>
                   </div>
