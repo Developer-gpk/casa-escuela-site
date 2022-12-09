@@ -16,11 +16,11 @@ export default {
       type: "url",
       description: "The main site url. Used to create canonical url",
     },
-    {
+    /*{
       name: "file",
       title: "File",
       type: "file",
-    },
+    },*/
     {
       name: "shopUrl",
       title: "Shop URL",

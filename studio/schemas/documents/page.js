@@ -59,6 +59,18 @@ export default {
       title: "Open Graph Image",
       type: "image",
     },
+    {
+      title: 'Archivo',
+      name: 'archivo',
+      type: 'file',
+      fields: [
+        {
+          name: 'description',
+          type: 'string',
+          title: 'Description'
+        }
+      ]
+    },
   ],
   preview: {
     select: {
