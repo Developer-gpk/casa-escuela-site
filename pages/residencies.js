@@ -21,7 +21,7 @@ export async function getServerSideProps({ locale }) {
       content,
       "description": description[$lang],
       openGraphImage,
-      "archivoURL": archivo.en.asset->url
+      "archivoURL": archivo.[$lang].asset->url
     }`,
     { lang: locale }
   );
@@ -41,7 +41,6 @@ const Residensies = ({ data, globalConfig }) => {
   const exhibition = findContentBySlug("exhibition-space", content);
   const footer = findContentBySlug("footer", content);
   const link = findContentByType("link", content);
-  const url = findContentByType("archivo", content)
 
   return (
     <Layout
