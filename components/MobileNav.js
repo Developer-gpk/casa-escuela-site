@@ -23,8 +23,8 @@ const MobileNav = ({ visible }) => {
     { path: "/happenings", text: { en: "Happenings", es: "Eventos" } },
     { path: "/residencies", text: { en: "Residencies", es: "Residencias" } },
     { path: "/about", text: { en: "About", es: "Nosotros" } },
-    { path: "/contact", text: { en: "Contact", es: "Contacto" } }
-    /*{ path: shopUrl, text: { en: "Shop", es: "Tienda" }, target: "_blank" },*/
+    { path: "/contact", text: { en: "Contact", es: "Contacto" } },
+    { path: shopUrl, text: { en: "Shop", es: "Tienda" }, target: "_blank" }
   ];
 
   return (
