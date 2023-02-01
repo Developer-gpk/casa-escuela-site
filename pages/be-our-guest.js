@@ -153,7 +153,7 @@ const BeOurGuest = ({ data, globalConfig }) => {
             />
           </Section>
         </BackgroundColor>
-        <style jsx>{`
+        <style>{`
           .host-wrapper {
             margin-top: 45px;
           }

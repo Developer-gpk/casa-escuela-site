@@ -105,7 +105,7 @@ const Residensies = ({ data, globalConfig }) => {
         </InviewElement>
       </Section>
       <BottomLink href={link.href} text={link?.text?.[locale]} />
-      <style jsx>{`
+      <style>{`
         .exhibition-wrapper {
           margin-top: 80px;
         }

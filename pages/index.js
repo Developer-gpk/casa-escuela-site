@@ -118,7 +118,7 @@ export default function Home({ data, globalConfig }) {
       {/* Bottom Section */}
       <BottomLink href={link.href} text={link?.text?.[locale]} />
 
-      <style jsx>{`
+      <style>{`
         .what-we-do-image {
           margin-left: calc((var(--bs-gutter-x, 0.75rem) + 16px) * -1);
           margin-right: calc((var(--bs-gutter-x, 0.75rem) + 16px) * -1);

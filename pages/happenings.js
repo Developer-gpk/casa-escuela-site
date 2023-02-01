@@ -83,7 +83,7 @@ const Happenings = ({ data, globalConfig }) => {
         target="_blank"
       />
 
-      <style jsx>{`
+      <style>{`
         .happenings-card {
           margin-bottom: 45px;
         }

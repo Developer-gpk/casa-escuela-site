@@ -129,7 +129,7 @@ const About = ({ data, globalConfig }) => {
       {/* Bottom Link Section */}
       <BottomLink href={link.href} text={link?.text?.[locale]} />
 
-      <style jsx>{`
+      <style>{`
         .team-wrapper {
           margin-top: 55px;
         }

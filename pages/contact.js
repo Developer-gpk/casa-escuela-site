@@ -290,7 +290,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
         )}
       </Section>
 
-      <style jsx>{`
+      <style>{`
         .contact-intro-image {
           height: 450px;
           position: relative;
