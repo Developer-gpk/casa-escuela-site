@@ -201,7 +201,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
                     type="text"
                     id="name"
                     className="inputField"
-                    {...register("name", { required: true, maxLength: 100 })}
+                    {...register("name", { required: true, maxLength: 200 })}
                   />
                   {errors?.name?.type === "required" && (
                     <p className="errorMessage">
@@ -223,6 +223,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
                       required: true,
                       pattern:
                         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                      maxLength: 200
                     })}
                   />
                   {errors?.email?.type === "required" && (
@@ -256,7 +257,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
                 id="message"
                 className="message"
                 placeholder={locale === "en" ? "Hello ..." : "Hola ..."}
-                {...register("message", { required: true, maxLength: 200 })}
+                {...register("message", { required: true, maxLength: 500 })}
               ></textarea>
               {errors?.message?.type === "required" && (
                 <p className="errorMessage">
