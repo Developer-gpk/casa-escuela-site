@@ -256,7 +256,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
                 id="message"
                 className="message"
                 placeholder={locale === "en" ? "Hello ..." : "Hola ..."}
-                {...register("message", { required: true, maxLength: 100 })}
+                {...register("message", { required: true, maxLength: 200 })}
               ></textarea>
               {errors?.message?.type === "required" && (
                 <p className="errorMessage">
