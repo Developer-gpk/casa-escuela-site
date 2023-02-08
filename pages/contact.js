@@ -69,7 +69,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
 
     setTimeout(() => {
       setFormState(initFormState);
-    }, 3000);
+    }, 1200000);
   };
 
   const { title, description, content, openGraphImage } = sectionsData;
