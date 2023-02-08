@@ -201,7 +201,7 @@ const Contact = ({ data: sectionsData, globalConfig }) => {
                     type="text"
                     id="name"
                     className="inputField"
-                    {...register("name", { required: true, maxLength: 30 })}
+                    {...register("name", { required: true, maxLength: 100 })}
                   />
                   {errors?.name?.type === "required" && (
                     <p className="errorMessage">
